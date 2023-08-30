@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body{
+    
+}
+header{
+   background-color: lightcyan;
+   border: 3px solid rgb(112, 109, 109);
+}
+
+header > nav {
+    background-color: aliceblue;
+    margin: 8px; 
+    border: 3px solid rgb(117, 100, 100);
+}
+
+nav > a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+nav > a:hover{
+    text-decoration:underline;
+}
+main{
+    border: 3px solid rgb(112, 109, 109);
+    margin: 3px 0px;
+}
+#principal{
+    display:block;
+    border: 3px solid rgb(112, 109, 109);
+    margin: 2px;
+    width: auto;
+}
+.principal{
+    display: block;
+    border: 3px solid rgb(112, 109, 109);
+    margin: 3px;
+}
+.sedundaria{
+    border: 3px solid rgb(112, 109, 109);
+}
+.secundaria > aside{
+    border: 3px solid rgb(112, 109, 109);
+    margin: 3px;
+}
+.lateral{
+    display: block;
+    border: 3px solid rgb(112, 109, 109);
+    margin: 3px;
+}

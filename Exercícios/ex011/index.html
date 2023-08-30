@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>Imagens Dinâmicas</title>
+    </head>
+    <body>
+        <h1>Imagens Dinâmicas</h1>
+        <p>
+            As imagens dinâmicas são aquelas que se adquam a diferentes situações que elas 
+            são submetidas, neste exercício colocaremos 3 imagens que ao mudarmos a dimensão da janela do site ela diminuirá.
+            
+        </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagens grande">
+        </picture>
+    </body>
+</html>
