@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+margin: 0px;
+padding: 0px;
+}
+#caixa{
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    
+    background: black url('imagens/espaco.jpg') left center no-repeat fixed;
+}
+#dentro{
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    background-size: 100% 100%;
+    background-image: url('imagens/astronauta.png');
+    background-repeat: no-repeat;
+
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
