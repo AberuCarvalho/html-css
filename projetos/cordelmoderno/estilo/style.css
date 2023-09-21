@@ -5,7 +5,21 @@
     padding: 0px;
 }
 
-html, body{
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
+}
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+    
+}
+
+body, html{
     height: 100vh;
     font-family: var(--font1);
     background-color: rgb(121, 121, 121);
