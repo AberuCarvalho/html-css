@@ -1,0 +1,41 @@
+@charset "UTF-8";   
+table{
+    width: 500px;
+    padding: 10px;
+    border-collapse: collapse;
+    position: relative;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead, tfoot{
+    background-color: gray;
+    color: White;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+}
+
+tbody > tr:nth-child(odd){
+    background-color:lightgray;
+}
+tbody > tr:nth-child(even){
+    font-weight: bolder;
+}
+
+.num{
+    text-align: right;
+}
+caption{
+    background-color: lightgray;
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 1.2em;
+}

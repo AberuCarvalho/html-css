@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <title>Tabelas</title>
+        <link rel="stylesheet" href="estilo/styelt002.css">
+    </head>
+    <body>
+        <h1>Uso de tabelas grandes</h1>
+        <!-- ANATOMIA DE TABELAS GRANDES
+            
+            TABLE
+                CAPION
+                Thead
+                    Tr, Td, Th
+                Tbody
+                    Tr, Td, Th
+                Tfoot
+                    Tr, Td, Th
+        -->
+        <table>
+            <caption>População das Unidades Federativa do Brasil</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">44.420.459</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19.597.330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">15.989.929</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num" class="num" class="num" class="num">14.136.417</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num" class="num" class="num">11.443.208</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num" class="num" class="num">10.880.506</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num" class="num" class="num">9.058.155</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num" class="num">8.791.688</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num" class="num">8.116.132</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num" class="num">7.609.601</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num" class="num">7.055.228</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num" class="num">6.775.152</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num" class="num">3.974.495</td>
+                </tr>
+                <tr>
+                    <td>Amozonas</td>
+                    <td class="num" class="num">3.941.175</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num" class="num">3.833.486</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num" class="num">3.658.813</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3.302.406</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3.269.200</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3.127.068</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2.817.068</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2.756.700</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2.209.558</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1.581.016</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1.511.459</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">830.026</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">733.508</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">636.303</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>203.062.512</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>Observações</h1>
+        <h2>Efeito Zebrado</h2>
+        <p>Para fazer o efeito zebrado usamos uma pseudo classe :nth-child(), com os parametros 2n que faz um intervalo de 1 sim 1 não para o efeito zebrado. </p>
+        <p>Também pode ser usado a palavra par ou impar para dar o mesmo efeito, porém escrito em inglês odd - para par even - para impar   </p>
+
+        <h2>Célula fixada no topo</h2>
+        <p>Para fixar o THEAD na tabela usamos os seguintes códigos. <br> primeiramente colocamos a Position da Table em relativa, e criamos um caminho para o Head da nossa tabela Thead > tr > th, com a Position sticky; top -1px e o mesmo background-color do Thead. </p> <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi iste, excepturi aperiam nesciunt laudantium distinctio sit fuga laborum, cum error corrupti iusto similique necessitatibus tempora voluptatum veritatis sint illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur veniam harum explicabo a expedita, officiis nulla laudantium consequuntur! Cupiditate accusantium tempore quas earum quae magnam saepe quos, exercitationem iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum sit, odit ipsa ullam doloremque facere soluta sed optio, repellat fugit esse asperiores repudiandae distinctio ducimus rerum molestias, harum obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi iste, excepturi aperiam nesciunt laudantium distinctio sit fuga laborum, cum error corrupti iusto similique necessitatibus tempora voluptatum veritatis sint illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur veniam harum explicabo a expedita, officiis nulla laudantium consequuntur! Cupiditate accusantium tempore quas earum quae magnam saepe quos, exercitationem iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum sit, odit ipsa ullam doloremque facere soluta sed optio, repellat fugit esse asperiores repudiandae distinctio ducimus rerum molestias, harum obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi iste, excepturi aperiam nesciunt laudantium distinctio sit fuga laborum, cum error corrupti iusto similique necessitatibus tempora voluptatum veritatis sint illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur veniam harum explicabo a expedita, officiis nulla laudantium consequuntur! Cupiditate accusantium tempore quas earum quae magnam saepe quos, exercitationem iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum sit, odit ipsa ullam doloremque facere soluta sed optio, repellat fugit esse asperiores repudiandae distinctio ducimus rerum molestias, harum obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi iste, excepturi aperiam nesciunt laudantium distinctio sit fuga laborum, cum error corrupti iusto similique necessitatibus tempora voluptatum veritatis sint illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur veniam harum explicabo a expedita, officiis nulla laudantium consequuntur! Cupiditate accusantium tempore quas earum quae magnam saepe quos, exercitationem iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum sit, odit ipsa ullam doloremque facere soluta sed optio, repellat fugit esse asperiores repudiandae distinctio ducimus rerum molestias, harum obcaecati.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi iste, excepturi aperiam nesciunt laudantium distinctio sit fuga laborum, cum error corrupti iusto similique necessitatibus tempora voluptatum veritatis sint illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur veniam harum explicabo a expedita, officiis nulla laudantium consequuntur! Cupiditate accusantium tempore quas earum quae magnam saepe quos, exercitationem iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum sit, odit ipsa ullam doloremque facere soluta sed optio, repellat fugit esse asperiores repudiandae distinctio ducimus rerum molestias, harum obcaecati.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi iste, excepturi aperiam nesciunt laudantium distinctio sit fuga laborum, cum error corrupti iusto similique necessitatibus tempora voluptatum veritatis sint illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur veniam harum explicabo a expedita, officiis nulla laudantium consequuntur! Cupiditate accusantium tempore quas earum quae magnam saepe quos, exercitationem iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum sit, odit ipsa ullam doloremque facere soluta sed optio, repellat fugit esse asperiores repudiandae distinctio ducimus rerum molestias, harum obcaecati.</p>
+    </body>
+</html>
